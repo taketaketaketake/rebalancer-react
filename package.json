@@ -1,0 +1,77 @@
+{
+  "name": "rebalancer",
+  "version": "1.0.0",
+  "description": "crypto coins rebalancer",
+  "author": "Pascal Dimassimo",
+  "license": "ISC",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "jest"
+  },
+  "main": "src/main.ts",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "rebalancer"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "rebalancer"
+      }
+    }
+  },
+  "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.0",
+    "@types/jest": "^24.0.4",
+    "@types/node": "^11.9.4",
+    "@types/react": "^16.8.6",
+    "@types/react-dom": "^16.8.2",
+    "@types/recharts": "^1.1.13",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "4.0.0",
+    "jest": "<24.0.0",
+    "recharts": "^1.5.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bootstrap": "^4.3.1",
+    "ccxt": "^1.18.466",
+    "electron-compile": "^6.4.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "react": "^16.8.3",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-dom": "npm:@hot-loader/react-dom",
+    "react-hot-loader": "^4.8.0",
+    "tslib": "^1.9.3"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

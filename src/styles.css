@@ -1,0 +1,61 @@
+body {
+    -webkit-app-region: drag;
+}
+
+button {
+    -webkit-app-region: no-drag;
+}
+
+#main {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    height: 100%;
+}
+
+div.main-sidebar {
+    background: #e5f0fa;
+    padding-top: 40px;
+    width: 200px;
+    -webkit-user-select: none;
+}
+
+div.main-content {
+    width: 100%;
+}
+
+div.tab-content {
+    padding-top: 20px;
+}
+
+div.settings {
+    padding: 20px;
+    background-color: #e5f0fa;
+    border-radius: .25rem;
+    margin-bottom: 20px;
+}
+
+td.missing {
+    color: red;
+}
+
+.modal-add-coin-buttons button {
+    margin-left: 10px;
+}
+
+.indexSection {
+    margin-top: 20px;
+    margin-left: 20px
+}
+
+div.invalid {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+div.loading img {
+    display: block;
+    margin: auto;
+}
